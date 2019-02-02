@@ -18,6 +18,24 @@
 		070E5C3F21FEF0F900C3D5DB /* ZJSOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070E5C3E21FEF0F900C3D5DB /* ZJSOrderViewController.m */; };
 		070E5C4221FEF33800C3D5DB /* ZJSAddUserActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070E5C4121FEF33800C3D5DB /* ZJSAddUserActivityViewController.m */; };
 		070E5C4521FEF58800C3D5DB /* ZJSAddToShortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070E5C4421FEF58800C3D5DB /* ZJSAddToShortViewController.m */; };
+		070E5C4C21FFF6B600C3D5DB /* ZJSIntentAddToShortcutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070E5C4B21FFF6B600C3D5DB /* ZJSIntentAddToShortcutViewController.m */; };
+		07F521A42205867100B5F6F5 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F521A32205867100B5F6F5 /* IntentHandler.m */; };
+		07F521AB2205867200B5F6F5 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070E5C5D21FFF95500C3D5DB /* IntentsUI.framework */; };
+		07F521AF2205867200B5F6F5 /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F521AE2205867200B5F6F5 /* IntentViewController.m */; };
+		07F521B22205867200B5F6F5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F521B02205867200B5F6F5 /* MainInterface.storyboard */; };
+		07F521B62205867200B5F6F5 /* SiriIntentExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07F521AA2205867200B5F6F5 /* SiriIntentExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07F521B92205867200B5F6F5 /* SiriIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07F521A02205867100B5F6F5 /* SiriIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07F521C12205881F00B5F6F5 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 07F521C02205881F00B5F6F5 /* Intents.intentdefinition */; };
+		07F521C22205881F00B5F6F5 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 07F521C02205881F00B5F6F5 /* Intents.intentdefinition */; };
+		07F521C32205881F00B5F6F5 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 07F521C02205881F00B5F6F5 /* Intents.intentdefinition */; };
+		07F521C722058D5100B5F6F5 /* ZJSDepositeDefinitionIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F521C622058D5100B5F6F5 /* ZJSDepositeDefinitionIntentHandler.m */; };
+		07F521CA22058DD000B5F6F5 /* ZJSWithdrawDefinitionIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F521C922058DD000B5F6F5 /* ZJSWithdrawDefinitionIntentHandler.m */; };
+		07F521D022058F2500B5F6F5 /* ZJSPaymentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F521CF22058F2500B5F6F5 /* ZJSPaymentDetails.m */; };
+		07F521D122058F2500B5F6F5 /* ZJSPaymentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F521CF22058F2500B5F6F5 /* ZJSPaymentDetails.m */; };
+		07F521D42205BC7500B5F6F5 /* ZJSPaymentSiriManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F521D32205BC7400B5F6F5 /* ZJSPaymentSiriManager.m */; };
+		07F521D52205BC7500B5F6F5 /* ZJSPaymentSiriManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F521D32205BC7400B5F6F5 /* ZJSPaymentSiriManager.m */; };
+		07F521D82205C1AE00B5F6F5 /* ZJSDepositeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F521D72205C1AE00B5F6F5 /* ZJSDepositeViewController.m */; };
+		07F521DB2205C1C300B5F6F5 /* ZJSWithdrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F521DA2205C1C300B5F6F5 /* ZJSWithdrawViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +53,36 @@
 			remoteGlobalIDString = 070E5C0721FEE65500C3D5DB;
 			remoteInfo = ZJSShortcutDemo;
 		};
+		07F521B42205867200B5F6F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 070E5C0021FEE65500C3D5DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F521A92205867200B5F6F5;
+			remoteInfo = SiriIntentExtensionUI;
+		};
+		07F521B72205867200B5F6F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 070E5C0021FEE65500C3D5DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F5219F2205867100B5F6F5;
+			remoteInfo = SiriIntentExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		070E5C7321FFF95500C3D5DB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				07F521B62205867200B5F6F5 /* SiriIntentExtensionUI.appex in Embed App Extensions */,
+				07F521B92205867200B5F6F5 /* SiriIntentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		070E5C0821FEE65500C3D5DB /* ZJSShortcutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJSShortcutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +107,33 @@
 		070E5C4121FEF33800C3D5DB /* ZJSAddUserActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSAddUserActivityViewController.m; sourceTree = "<group>"; };
 		070E5C4321FEF58800C3D5DB /* ZJSAddToShortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSAddToShortViewController.h; sourceTree = "<group>"; };
 		070E5C4421FEF58800C3D5DB /* ZJSAddToShortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSAddToShortViewController.m; sourceTree = "<group>"; };
+		070E5C4A21FFF6B600C3D5DB /* ZJSIntentAddToShortcutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSIntentAddToShortcutViewController.h; sourceTree = "<group>"; };
+		070E5C4B21FFF6B600C3D5DB /* ZJSIntentAddToShortcutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSIntentAddToShortcutViewController.m; sourceTree = "<group>"; };
+		070E5C5D21FFF95500C3D5DB /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		070E5CC7220137A400C3D5DB /* ZJSShortcutDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZJSShortcutDemo.entitlements; sourceTree = "<group>"; };
+		07F521A02205867100B5F6F5 /* SiriIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F521A22205867100B5F6F5 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		07F521A32205867100B5F6F5 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		07F521A52205867100B5F6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F521AA2205867200B5F6F5 /* SiriIntentExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntentExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F521AD2205867200B5F6F5 /* IntentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentViewController.h; sourceTree = "<group>"; };
+		07F521AE2205867200B5F6F5 /* IntentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentViewController.m; sourceTree = "<group>"; };
+		07F521B12205867200B5F6F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		07F521B32205867200B5F6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F521C02205881F00B5F6F5 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		07F521C422058A4200B5F6F5 /* SiriIntentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriIntentExtension.entitlements; sourceTree = "<group>"; };
+		07F521C522058D5100B5F6F5 /* ZJSDepositeDefinitionIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSDepositeDefinitionIntentHandler.h; sourceTree = "<group>"; };
+		07F521C622058D5100B5F6F5 /* ZJSDepositeDefinitionIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSDepositeDefinitionIntentHandler.m; sourceTree = "<group>"; };
+		07F521C822058DD000B5F6F5 /* ZJSWithdrawDefinitionIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSWithdrawDefinitionIntentHandler.h; sourceTree = "<group>"; };
+		07F521C922058DD000B5F6F5 /* ZJSWithdrawDefinitionIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSWithdrawDefinitionIntentHandler.m; sourceTree = "<group>"; };
+		07F521CE22058F2500B5F6F5 /* ZJSPaymentDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSPaymentDetails.h; sourceTree = "<group>"; };
+		07F521CF22058F2500B5F6F5 /* ZJSPaymentDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSPaymentDetails.m; sourceTree = "<group>"; };
+		07F521D22205BC7400B5F6F5 /* ZJSPaymentSiriManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSPaymentSiriManager.h; sourceTree = "<group>"; };
+		07F521D32205BC7400B5F6F5 /* ZJSPaymentSiriManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSPaymentSiriManager.m; sourceTree = "<group>"; };
+		07F521D62205C1AE00B5F6F5 /* ZJSDepositeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSDepositeViewController.h; sourceTree = "<group>"; };
+		07F521D72205C1AE00B5F6F5 /* ZJSDepositeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSDepositeViewController.m; sourceTree = "<group>"; };
+		07F521D92205C1C300B5F6F5 /* ZJSWithdrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSWithdrawViewController.h; sourceTree = "<group>"; };
+		07F521DA2205C1C300B5F6F5 /* ZJSWithdrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSWithdrawViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,15 +158,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07F5219D2205867100B5F6F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F521A72205867200B5F6F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F521AB2205867200B5F6F5 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		070E5BFF21FEE65500C3D5DB = {
 			isa = PBXGroup;
 			children = (
+				07F521D22205BC7400B5F6F5 /* ZJSPaymentSiriManager.h */,
+				07F521D32205BC7400B5F6F5 /* ZJSPaymentSiriManager.m */,
+				07F521C02205881F00B5F6F5 /* Intents.intentdefinition */,
 				070E5C0A21FEE65500C3D5DB /* ZJSShortcutDemo */,
 				070E5C2321FEE65A00C3D5DB /* ZJSShortcutDemoTests */,
 				070E5C2E21FEE65A00C3D5DB /* ZJSShortcutDemoUITests */,
+				07F521A12205867100B5F6F5 /* SiriIntentExtension */,
+				07F521AC2205867200B5F6F5 /* SiriIntentExtensionUI */,
+				070E5C5C21FFF95500C3D5DB /* Frameworks */,
 				070E5C0921FEE65500C3D5DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +198,8 @@
 				070E5C0821FEE65500C3D5DB /* ZJSShortcutDemo.app */,
 				070E5C2021FEE65A00C3D5DB /* ZJSShortcutDemoTests.xctest */,
 				070E5C2B21FEE65A00C3D5DB /* ZJSShortcutDemoUITests.xctest */,
+				07F521A02205867100B5F6F5 /* SiriIntentExtension.appex */,
+				07F521AA2205867200B5F6F5 /* SiriIntentExtensionUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +207,9 @@
 		070E5C0A21FEE65500C3D5DB /* ZJSShortcutDemo */ = {
 			isa = PBXGroup;
 			children = (
+				07F521CC22058EB800B5F6F5 /* Intent */,
+				07F521CB22058E7400B5F6F5 /* Activity */,
+				070E5CC7220137A400C3D5DB /* ZJSShortcutDemo.entitlements */,
 				070E5C0B21FEE65500C3D5DB /* AppDelegate.h */,
 				070E5C0C21FEE65500C3D5DB /* AppDelegate.m */,
 				070E5C0E21FEE65500C3D5DB /* ViewController.h */,
@@ -119,10 +219,6 @@
 				070E5C1621FEE65900C3D5DB /* LaunchScreen.storyboard */,
 				070E5C1921FEE65900C3D5DB /* Info.plist */,
 				070E5C1A21FEE65900C3D5DB /* main.m */,
-				070E5C3D21FEF0F900C3D5DB /* ZJSOrderViewController.h */,
-				070E5C3E21FEF0F900C3D5DB /* ZJSOrderViewController.m */,
-				070E5C4021FEF33800C3D5DB /* ZJSAddUserActivityViewController.h */,
-				070E5C4121FEF33800C3D5DB /* ZJSAddUserActivityViewController.m */,
 				070E5C4321FEF58800C3D5DB /* ZJSAddToShortViewController.h */,
 				070E5C4421FEF58800C3D5DB /* ZJSAddToShortViewController.m */,
 			);
@@ -147,6 +243,74 @@
 			path = ZJSShortcutDemoUITests;
 			sourceTree = "<group>";
 		};
+		070E5C5C21FFF95500C3D5DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				070E5C5D21FFF95500C3D5DB /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07F521A12205867100B5F6F5 /* SiriIntentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				07F521C422058A4200B5F6F5 /* SiriIntentExtension.entitlements */,
+				07F521A22205867100B5F6F5 /* IntentHandler.h */,
+				07F521A32205867100B5F6F5 /* IntentHandler.m */,
+				07F521A52205867100B5F6F5 /* Info.plist */,
+				07F521C522058D5100B5F6F5 /* ZJSDepositeDefinitionIntentHandler.h */,
+				07F521C622058D5100B5F6F5 /* ZJSDepositeDefinitionIntentHandler.m */,
+				07F521C822058DD000B5F6F5 /* ZJSWithdrawDefinitionIntentHandler.h */,
+				07F521C922058DD000B5F6F5 /* ZJSWithdrawDefinitionIntentHandler.m */,
+			);
+			path = SiriIntentExtension;
+			sourceTree = "<group>";
+		};
+		07F521AC2205867200B5F6F5 /* SiriIntentExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				07F521AD2205867200B5F6F5 /* IntentViewController.h */,
+				07F521AE2205867200B5F6F5 /* IntentViewController.m */,
+				07F521B02205867200B5F6F5 /* MainInterface.storyboard */,
+				07F521B32205867200B5F6F5 /* Info.plist */,
+				07F521D62205C1AE00B5F6F5 /* ZJSDepositeViewController.h */,
+				07F521D72205C1AE00B5F6F5 /* ZJSDepositeViewController.m */,
+				07F521D92205C1C300B5F6F5 /* ZJSWithdrawViewController.h */,
+				07F521DA2205C1C300B5F6F5 /* ZJSWithdrawViewController.m */,
+			);
+			path = SiriIntentExtensionUI;
+			sourceTree = "<group>";
+		};
+		07F521CB22058E7400B5F6F5 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				070E5C3D21FEF0F900C3D5DB /* ZJSOrderViewController.h */,
+				070E5C3E21FEF0F900C3D5DB /* ZJSOrderViewController.m */,
+				070E5C4021FEF33800C3D5DB /* ZJSAddUserActivityViewController.h */,
+				070E5C4121FEF33800C3D5DB /* ZJSAddUserActivityViewController.m */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		07F521CC22058EB800B5F6F5 /* Intent */ = {
+			isa = PBXGroup;
+			children = (
+				07F521CD22058EEA00B5F6F5 /* Model */,
+				070E5C4A21FFF6B600C3D5DB /* ZJSIntentAddToShortcutViewController.h */,
+				070E5C4B21FFF6B600C3D5DB /* ZJSIntentAddToShortcutViewController.m */,
+			);
+			path = Intent;
+			sourceTree = "<group>";
+		};
+		07F521CD22058EEA00B5F6F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07F521CE22058F2500B5F6F5 /* ZJSPaymentDetails.h */,
+				07F521CF22058F2500B5F6F5 /* ZJSPaymentDetails.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,10 +321,13 @@
 				070E5C0421FEE65500C3D5DB /* Sources */,
 				070E5C0521FEE65500C3D5DB /* Frameworks */,
 				070E5C0621FEE65500C3D5DB /* Resources */,
+				070E5C7321FFF95500C3D5DB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				07F521B52205867200B5F6F5 /* PBXTargetDependency */,
+				07F521B82205867200B5F6F5 /* PBXTargetDependency */,
 			);
 			name = ZJSShortcutDemo;
 			productName = ZJSShortcutDemo;
@@ -203,6 +370,40 @@
 			productReference = 070E5C2B21FEE65A00C3D5DB /* ZJSShortcutDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		07F5219F2205867100B5F6F5 /* SiriIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F521BD2205867200B5F6F5 /* Build configuration list for PBXNativeTarget "SiriIntentExtension" */;
+			buildPhases = (
+				07F5219C2205867100B5F6F5 /* Sources */,
+				07F5219D2205867100B5F6F5 /* Frameworks */,
+				07F5219E2205867100B5F6F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriIntentExtension;
+			productName = SiriIntentExtension;
+			productReference = 07F521A02205867100B5F6F5 /* SiriIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		07F521A92205867200B5F6F5 /* SiriIntentExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F521BA2205867200B5F6F5 /* Build configuration list for PBXNativeTarget "SiriIntentExtensionUI" */;
+			buildPhases = (
+				07F521A62205867200B5F6F5 /* Sources */,
+				07F521A72205867200B5F6F5 /* Frameworks */,
+				07F521A82205867200B5F6F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriIntentExtensionUI;
+			productName = SiriIntentExtensionUI;
+			productReference = 07F521AA2205867200B5F6F5 /* SiriIntentExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,6 +415,14 @@
 				TargetAttributes = {
 					070E5C0721FEE65500C3D5DB = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					070E5C1F21FEE65A00C3D5DB = {
 						CreatedOnToolsVersion = 10.1;
@@ -222,6 +431,17 @@
 					070E5C2A21FEE65A00C3D5DB = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 070E5C0721FEE65500C3D5DB;
+					};
+					07F5219F2205867100B5F6F5 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					07F521A92205867200B5F6F5 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -241,6 +461,8 @@
 				070E5C0721FEE65500C3D5DB /* ZJSShortcutDemo */,
 				070E5C1F21FEE65A00C3D5DB /* ZJSShortcutDemoTests */,
 				070E5C2A21FEE65A00C3D5DB /* ZJSShortcutDemoUITests */,
+				07F5219F2205867100B5F6F5 /* SiriIntentExtension */,
+				07F521A92205867200B5F6F5 /* SiriIntentExtensionUI */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +492,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07F5219E2205867100B5F6F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F521A82205867200B5F6F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F521B22205867200B5F6F5 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -277,11 +514,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070E5C4C21FFF6B600C3D5DB /* ZJSIntentAddToShortcutViewController.m in Sources */,
 				070E5C4521FEF58800C3D5DB /* ZJSAddToShortViewController.m in Sources */,
 				070E5C1021FEE65500C3D5DB /* ViewController.m in Sources */,
+				07F521D022058F2500B5F6F5 /* ZJSPaymentDetails.m in Sources */,
 				070E5C3F21FEF0F900C3D5DB /* ZJSOrderViewController.m in Sources */,
+				07F521D42205BC7500B5F6F5 /* ZJSPaymentSiriManager.m in Sources */,
 				070E5C1B21FEE65900C3D5DB /* main.m in Sources */,
 				070E5C0D21FEE65500C3D5DB /* AppDelegate.m in Sources */,
+				07F521C12205881F00B5F6F5 /* Intents.intentdefinition in Sources */,
 				070E5C4221FEF33800C3D5DB /* ZJSAddUserActivityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +543,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07F5219C2205867100B5F6F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F521C22205881F00B5F6F5 /* Intents.intentdefinition in Sources */,
+				07F521D122058F2500B5F6F5 /* ZJSPaymentDetails.m in Sources */,
+				07F521CA22058DD000B5F6F5 /* ZJSWithdrawDefinitionIntentHandler.m in Sources */,
+				07F521D52205BC7500B5F6F5 /* ZJSPaymentSiriManager.m in Sources */,
+				07F521A42205867100B5F6F5 /* IntentHandler.m in Sources */,
+				07F521C722058D5100B5F6F5 /* ZJSDepositeDefinitionIntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F521A62205867200B5F6F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F521C32205881F00B5F6F5 /* Intents.intentdefinition in Sources */,
+				07F521AF2205867200B5F6F5 /* IntentViewController.m in Sources */,
+				07F521DB2205C1C300B5F6F5 /* ZJSWithdrawViewController.m in Sources */,
+				07F521D82205C1AE00B5F6F5 /* ZJSDepositeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -314,6 +579,16 @@
 			isa = PBXTargetDependency;
 			target = 070E5C0721FEE65500C3D5DB /* ZJSShortcutDemo */;
 			targetProxy = 070E5C2C21FEE65A00C3D5DB /* PBXContainerItemProxy */;
+		};
+		07F521B52205867200B5F6F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F521A92205867200B5F6F5 /* SiriIntentExtensionUI */;
+			targetProxy = 07F521B42205867200B5F6F5 /* PBXContainerItemProxy */;
+		};
+		07F521B82205867200B5F6F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F5219F2205867100B5F6F5 /* SiriIntentExtension */;
+			targetProxy = 07F521B72205867200B5F6F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -332,6 +607,14 @@
 				070E5C1721FEE65900C3D5DB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		07F521B02205867200B5F6F5 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07F521B12205867200B5F6F5 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -453,6 +736,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZJSShortcutDemo/ZJSShortcutDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CLLJBLFA9;
 				INFOPLIST_FILE = ZJSShortcutDemo/Info.plist;
@@ -471,6 +755,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZJSShortcutDemo/ZJSShortcutDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CLLJBLFA9;
 				INFOPLIST_FILE = ZJSShortcutDemo/Info.plist;
@@ -559,6 +844,80 @@
 			};
 			name = Release;
 		};
+		07F521BB2205867200B5F6F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CLLJBLFA9;
+				INFOPLIST_FILE = SiriIntentExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nomo.zhou.ZJSShortcutDemo.SiriIntentExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07F521BC2205867200B5F6F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CLLJBLFA9;
+				INFOPLIST_FILE = SiriIntentExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nomo.zhou.ZJSShortcutDemo.SiriIntentExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07F521BE2205867200B5F6F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SiriIntentExtension/SiriIntentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CLLJBLFA9;
+				INFOPLIST_FILE = SiriIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nomo.zhou.ZJSShortcutDemo.SiriIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07F521BF2205867200B5F6F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SiriIntentExtension/SiriIntentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CLLJBLFA9;
+				INFOPLIST_FILE = SiriIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nomo.zhou.ZJSShortcutDemo.SiriIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -594,6 +953,24 @@
 			buildConfigurations = (
 				070E5C3B21FEE65A00C3D5DB /* Debug */,
 				070E5C3C21FEE65A00C3D5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F521BA2205867200B5F6F5 /* Build configuration list for PBXNativeTarget "SiriIntentExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F521BB2205867200B5F6F5 /* Debug */,
+				07F521BC2205867200B5F6F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F521BD2205867200B5F6F5 /* Build configuration list for PBXNativeTarget "SiriIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F521BE2205867200B5F6F5 /* Debug */,
+				07F521BF2205867200B5F6F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

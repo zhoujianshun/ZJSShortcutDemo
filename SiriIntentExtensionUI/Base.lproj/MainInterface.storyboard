@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Deposite View Controller-->
+        <scene sceneID="fDJ-Ic-XNm">
+            <objects>
+                <viewController storyboardIdentifier="ZJSDepositeViewController" id="lyV-q0-l0F" customClass="ZJSDepositeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QjR-nV-zSC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmd-JF-PA3">
+                                <rect key="frame" x="16" y="65" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cmd-JF-PA3" firstAttribute="centerX" secondItem="QjR-nV-zSC" secondAttribute="centerX" id="Rdu-Ai-J6E"/>
+                            <constraint firstItem="Cmd-JF-PA3" firstAttribute="centerY" secondItem="QjR-nV-zSC" secondAttribute="centerY" id="eQ5-ns-twn"/>
+                            <constraint firstItem="eMY-DP-B4g" firstAttribute="trailing" secondItem="Cmd-JF-PA3" secondAttribute="trailing" constant="16" id="lQz-IR-wZy"/>
+                            <constraint firstItem="Cmd-JF-PA3" firstAttribute="leading" secondItem="eMY-DP-B4g" secondAttribute="leading" constant="16" id="qs6-4K-LwO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eMY-DP-B4g"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="150"/>
+                    <connections>
+                        <outlet property="label" destination="Cmd-JF-PA3" id="N7s-AE-ONh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZM-jd-f0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-618" y="-366"/>
+        </scene>
+        <!--Withdraw View Controller-->
+        <scene sceneID="3w5-BQ-yN0">
+            <objects>
+                <viewController storyboardIdentifier="ZJSWithdrawViewController" id="cgl-4n-vWA" customClass="ZJSWithdrawViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yEv-9m-Ub8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCg-Ye-oeS">
+                                <rect key="frame" x="16" y="65" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GCg-Ye-oeS" firstAttribute="centerX" secondItem="yEv-9m-Ub8" secondAttribute="centerX" id="6On-uR-O6O"/>
+                            <constraint firstItem="wq0-b2-wcF" firstAttribute="trailing" secondItem="GCg-Ye-oeS" secondAttribute="trailing" constant="16" id="gPC-Q8-yaJ"/>
+                            <constraint firstItem="GCg-Ye-oeS" firstAttribute="centerY" secondItem="yEv-9m-Ub8" secondAttribute="centerY" id="nLc-5d-043"/>
+                            <constraint firstItem="GCg-Ye-oeS" firstAttribute="leading" secondItem="wq0-b2-wcF" secondAttribute="leading" constant="16" id="ofc-kw-n4C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wq0-b2-wcF"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="150"/>
+                    <connections>
+                        <outlet property="label" destination="GCg-Ye-oeS" id="pZW-C6-ka5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2l9-D4-ZcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="-124"/>
+        </scene>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

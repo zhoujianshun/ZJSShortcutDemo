@@ -66,7 +66,16 @@
     attributes.contentDescription = @"每天一杯咖啡，Lucy in coffee";
     checkInActivity.contentAttributeSet = attributes;
     self.userActivity = checkInActivity;
+//    [checkInActivity becomeCurrent]
 }
+
+//-(void)delete{
+//    [[CSSearchableIndex defaultSearchableIndex] deleteSearchableItemsWithDomainIdentifiers:@[] completionHandler:^(NSError * _Nullable error) {
+//        
+//    }];
+//    
+//    [CSSearchableIndex defaultSearchableIndex] sear
+//}
 
 
 #pragma mark -  添加到siri
@@ -85,14 +94,16 @@
                     NSLog(@"===>>>快捷下单shortcut已经添加到Siri");
                 }
             }
-            if (isAdd) {
-                weakself.currentShortcut = shortcut;
-                [weakself.addToSiriButton setTitle:@"编辑siri" forState:UIControlStateNormal];
-            }else{
-                weakself.currentShortcut = nil;
-                [weakself.addToSiriButton setTitle:@"添加到siri" forState:UIControlStateNormal];
-            }
-            
+          
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (isAdd) {
+                    weakself.currentShortcut = shortcut;
+                    [weakself.addToSiriButton setTitle:@"编辑siri" forState:UIControlStateNormal];
+                }else{
+                    weakself.currentShortcut = nil;
+                    [weakself.addToSiriButton setTitle:@"添加到siri" forState:UIControlStateNormal];
+                }
+            });
         }];
     }
 }
@@ -147,6 +158,8 @@
 - (void)addVoiceShortcutViewControllerDidCancel:(INUIAddVoiceShortcutViewController *)controller
 API_AVAILABLE(ios(12.0)){
     NSLog(@"%s",__func__);
+    
+    [controller dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)addVoiceShortcutViewController:(INUIAddVoiceShortcutViewController *)controller didFinishWithVoiceShortcut:(nullable INVoiceShortcut *)voiceShortcut error:(nullable NSError *)error  API_AVAILABLE(ios(12.0)){
     if (self.addShortcutVC) {

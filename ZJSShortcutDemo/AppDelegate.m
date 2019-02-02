@@ -57,9 +57,13 @@
         UINavigationController *navi = (UINavigationController *)self.window.rootViewController;
         ZJSOrderViewController *order = [[ZJSOrderViewController alloc] init];
         [navi pushViewController:order animated:YES];
-    } else if ([userActivity.activityType isEqualToString:@"QuilkOrderIntent"]) {
+    } else if ([userActivity.activityType isEqualToString:@"QuickOrderCoffeeIntent"]) {
         NSLog(@"===>>>自定义 intent：%@",userActivity);
+         return false;
+        
     }
+    UINavigationController *navi = (UINavigationController *)self.window.rootViewController;
+    restorationHandler(navi.viewControllers);
     return YES;
 }
 

@@ -24,11 +24,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8F-X1-8gw">
-                                <rect key="frame" x="152" y="147" width="46" height="30"/>
+                                <rect key="frame" x="100" y="83" width="147" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="UserActivity Shortcut"/>
                                 <connections>
                                     <segue destination="fP3-Li-zRL" kind="show" id="v4K-CK-dSt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjr-sb-GNC">
+                                <rect key="frame" x="121" y="133" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Intent Shortcut"/>
+                                <connections>
+                                    <segue destination="uZo-oM-ka0" kind="show" id="GZo-1V-0Au"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,6 +55,97 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="745" y="-448"/>
+        </scene>
+        <!--Intent Add To Shortcut View Controller-->
+        <scene sceneID="5sc-3E-uZb">
+            <objects>
+                <tableViewController id="uZo-oM-ka0" customClass="ZJSIntentAddToShortcutViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="118-6b-OGM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Available Balance" id="9wM-0B-TYy">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0WA-8f-bzq">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0WA-8f-bzq" id="mLq-su-z7J">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMh-ee-mKa">
+                                                    <rect key="frame" x="16" y="11.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYI-8h-F42">
+                                                    <rect key="frame" x="306" y="7" width="53" height="30"/>
+                                                    <state key="normal" title="Refresh"/>
+                                                    <connections>
+                                                        <action selector="refreshAction:" destination="uZo-oM-ka0" eventType="touchUpInside" id="J8v-5a-zcY"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kMh-ee-mKa" firstAttribute="leading" secondItem="mLq-su-z7J" secondAttribute="leadingMargin" id="KWI-AP-5Sf"/>
+                                                <constraint firstItem="tYI-8h-F42" firstAttribute="centerY" secondItem="mLq-su-z7J" secondAttribute="centerY" id="KnQ-KN-fOf"/>
+                                                <constraint firstAttribute="trailing" secondItem="tYI-8h-F42" secondAttribute="trailing" constant="16" id="cYd-zf-LDB"/>
+                                                <constraint firstItem="kMh-ee-mKa" firstAttribute="centerY" secondItem="mLq-su-z7J" secondAttribute="centerY" id="wqO-DS-yUd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Actions" id="Kd8-xU-WG2">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AYK-OE-7zX">
+                                        <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AYK-OE-7zX" id="ZCd-00-GGd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYD-wd-Itr">
+                                                    <rect key="frame" x="16" y="7" width="127" height="30"/>
+                                                    <state key="normal" title="Request Money(+)"/>
+                                                    <connections>
+                                                        <action selector="requestAction:" destination="uZo-oM-ka0" eventType="touchUpInside" id="FrA-Ni-tla"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v35-TP-VmG">
+                                                    <rect key="frame" x="255" y="7" width="104" height="30"/>
+                                                    <state key="normal" title="Send Money(-)"/>
+                                                    <connections>
+                                                        <action selector="sendAction:" destination="uZo-oM-ka0" eventType="touchUpInside" id="NF2-i6-Foc"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iYD-wd-Itr" firstAttribute="leading" secondItem="ZCd-00-GGd" secondAttribute="leading" constant="16" id="Aep-dr-wcE"/>
+                                                <constraint firstItem="iYD-wd-Itr" firstAttribute="centerY" secondItem="ZCd-00-GGd" secondAttribute="centerY" id="GCD-k6-Dj8"/>
+                                                <constraint firstItem="v35-TP-VmG" firstAttribute="centerY" secondItem="ZCd-00-GGd" secondAttribute="centerY" id="fEy-gb-BVb"/>
+                                                <constraint firstAttribute="trailing" secondItem="v35-TP-VmG" secondAttribute="trailing" constant="16" id="j2b-ba-fe7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="uZo-oM-ka0" id="eKO-cg-et4"/>
+                            <outlet property="delegate" destination="uZo-oM-ka0" id="hc2-cV-cGi"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="amountLabel" destination="kMh-ee-mKa" id="G5Y-fr-h6Z"/>
+                        <outlet property="refreshButton" destination="tYI-8h-F42" id="kMJ-nT-COS"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbu-kK-Oy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cot-FT-eE6">
@@ -98,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7b-1h-pII" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1432.8" y="-419.64017991004499"/>
+            <point key="canvasLocation" x="1462" y="-448"/>
         </scene>
     </scenes>
 </document>
